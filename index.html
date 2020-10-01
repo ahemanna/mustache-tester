@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{ Mustache }} Tester</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="css/styles.css" rel="stylesheet" media="screen" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <h1 class="titlebar-left">
+                        {{ Mustache }} Tester
+                    </h1>
+                    <h6>
+                        Powered by handlebars js...
+                    </h6>
+                    <hr align="left" />
+                </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="maincontent-wrapper">
+                <form class="form-horizontal">
+                    <div class="form-group control-group row">
+                        <div class="controls col-lg-7">
+                            <label class="control-label col-lg-4" for="templateStr"><b>Mustache Template:</b></label>
+                        </div>
+                        <div class="controls col-lg-7" id="templateStrDiv">
+                            <textarea class="form-control" id="templateStr" rows="10"
+                                cols="50">Handlebars <b>{{doesWhat}}</b></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group control-group row">
+                        <div class="controls col-lg-7">
+                            <label class="control-label col-lg-4" for="jsonObj"><b>JSON Object:</b></label>
+                        </div>
+                        <div class="controls col-lg-7" id="jsonObjDiv">
+                            <textarea class="form-control" id="jsonObj" rows="10"
+                                cols="50">{ "doesWhat": "rocks!" }</textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group control-group row">
+                        <div class="controls col-lg-7">
+                            <button class="btn btn-large btn-primary" type="button" id="previewBtn">
+                                Preview
+                            </button>
+                            <button class="btn btn-large btn-secondary" type="reset" id="resetBtn">
+                                Reset
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-group control-group row">
+                        <div class="controls col-lg-7">
+                            <label class="control-label col-lg-4" for="compiledStr"><b>Compiled String:</b></label>
+                        </div>
+                        <div class="controls col-lg-7" id="compiledStrDiv">
+                            <textarea class="form-control" id="compiledStr" rows="10" cols="50" readonly></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/handlebars.min-v4.7.6.js"></script>
+    <script src="js/global.js"></script>
+</body>
+
+</html>
