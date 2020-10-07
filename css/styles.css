@@ -6,7 +6,3 @@
 a:hover {
   text-decoration: none
 }
-
-.hr-vertical {
-  transform: rotate(90deg);
-}
